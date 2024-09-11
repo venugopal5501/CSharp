@@ -4,7 +4,7 @@ class electricity
     public static void Main(string[] args)
     {
         int id, unit;
-        double total, surcharge,fin;
+        double total, surcharge, fin;
         string name;
         Console.Write("Enter CustomerId : ");
         id = Convert.ToInt32(Console.ReadLine());
@@ -53,7 +53,7 @@ class electricity
 
 
         }
-          else if (unit >= 400 && unit <= 600)
+        else if (unit >= 400 && unit <= 600)
         {
             total = unit * 1.80;
             if (total > 400)
@@ -74,13 +74,13 @@ class electricity
 
 
         }
-          else if (unit >= 600 )
+        else if (unit >= 600)
         {
             total = unit * 2.00;
             if (total > 400)
             {
-                surcharge = total * 0.15 ;
-                fin=surcharge+ total;
+                surcharge = total * 0.15;
+                fin = surcharge + total;
                 Console.Write("The Amount to pay : Rs " + fin);
 
             }
