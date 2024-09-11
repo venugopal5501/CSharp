@@ -32,7 +32,7 @@ class electricity
             }
 
         }
-        else if (unit >= 200 && unit <= 400)
+        else if (unit >= 200 && unit <400)
         {
             total = unit * 1.50;
             if (total > 400)
@@ -53,7 +53,7 @@ class electricity
 
 
         }
-        else if (unit >= 400 && unit <= 600)
+        else if (unit >= 400 && unit <600)
         {
             total = unit * 1.80;
             if (total > 400)
